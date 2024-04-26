@@ -5,7 +5,7 @@ import { handleRedirect } from '../../utils';
 export function ProductCard({ product }) {
   return (
     <div className="relative flex flex-col text-gray-700 bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] bg-clip-border rounded-xl w-80 m-2">
-      <Link to={`/products/${product.id}`}>
+      <Link to={`/infla-bot-front/products/${product.id}`}>
         <div className="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white  bg-clip-border rounded-xl h-70">
           <img src={product.image} alt="profile-picture" />
         </div>
