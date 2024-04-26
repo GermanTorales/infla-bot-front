@@ -4,14 +4,16 @@ import * as Pages from './pages';
 import { NavbarContainer } from './components';
 
 function App() {
+  const urlPath = 'infla-bot-front';
+
   return (
     <>
       <NavbarContainer />
       <Routes>
-        <Route path="/" element={<Pages.HomeContainer />} />
-        <Route path="/products" element={<Pages.ProductsContainer />} />
-        <Route path="/products/:id" element={<Pages.ProductContainer />} />
-        <Route path="/inflation" element={<Pages.InflationContainer />} />
+        <Route path={`${urlPath}/`} element={<Pages.HomeContainer />} />
+        <Route path={`${urlPath}/products`} element={<Pages.ProductsContainer />} />
+        <Route path={`${urlPath}/products/:id`} element={<Pages.ProductContainer />} />
+        <Route path={`${urlPath}/inflation`} element={<Pages.InflationContainer />} />
       </Routes>
     </>
   );
