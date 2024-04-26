@@ -3,15 +3,15 @@ import { Navbar } from './Navbar';
 export function NavbarContainer() {
   const pages = [
     {
-      path: '',
+      path: '/infla-bot-front',
       label: 'Home',
     },
     {
-      path: 'products',
+      path: '/infla-bot-front/products',
       label: 'Canasta Basica',
     },
     {
-      path: 'inflation',
+      path: '/infla-bot-front/inflation',
       label: 'Datos de inflacion',
     },
   ];
